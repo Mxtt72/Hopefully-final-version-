@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShadeScout</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>ShadeScout</h1>
+    <button id="darkToggle">🌓</button>
+  </header>
+
+  <main>
+    <section id="upload">
+      <input type="file" id="imageUpload" accept="image/*" />
+      <canvas id="canvas"></canvas>
+    </section>
+
+    <section id="pickedColor">
+      <div id="colorPreview"></div>
+      <p id="hexCode">Pick a color from your image</p>
+    </section>
+
+    <section id="filters">
+      <label><input type="checkbox" id="crueltyFree" /> Cruelty Free</label>
+      <select id="categoryFilter">
+        <option value="">All</option>
+        <option value="lipstick">Lipstick</option>
+        <option value="eyeliner">Eyeliner</option>
+        <option value="blush">Blush</option>
+      </select>
+    </section>
+
+    <section id="products">
+      <h2>Matching Products</h2>
+      <div id="productList"></div>
+    </section>
+
+    <section id="wishlist">
+      <h2>Your Wishlist</h2>
+      <ul id="wishlistItems"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
